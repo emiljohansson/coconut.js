@@ -1,0 +1,29 @@
+{
+  "name": "coconut2.js",
+  "version": "0.0.0",
+  "description": "npm based html5 game engine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emiljohansson/coconut2.js"
+  },
+  "keywords": [
+    "game",
+    "engine",
+    "npm",
+    "dev",
+    "html5"
+  ],
+  "author": "Emil Johansson <emiljohansson.se@gmail.com> (emiljohansson.se)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emiljohansson/coconut.js/issues"
+  },
+  "homepage": "https://github.com/emiljohansson/coconut.js",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
