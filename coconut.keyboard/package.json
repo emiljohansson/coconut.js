@@ -1,6 +1,6 @@
 {
   "name": "coconut.keyboard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Single keyboard handler for html5 game development.",
   "main": "index.js",
   "scripts": {
