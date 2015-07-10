@@ -4,7 +4,8 @@
   "description": "Single keyboard handler for html5 game development.",
   "main": "index.js",
   "scripts": {
-    "test": "rm test/bundle.js && browserify test.js -o test/bundle.js && echo 'open ./test/index.html in web browser'"
+    "test": "node test.js | tap-dot && npm run test-html",
+    "test-html": "rm test/bundle.js && browserify test.js -o test/bundle.js && echo 'open ./test/index.html in web browser'"
   },
   "repository": "emiljohansson/coconut.js",
   "keywords": [
@@ -19,7 +20,7 @@
   "author": "Emil Johansson <emiljohansson.se@gmail.com> (emiljohansson.se)",
   "license": "MIT",
   "devDependencies": {
-    "jquery": "^2.1.4",
+    "tap-dot": "^1.0.0",
     "tape": "^4.0.0"
   }
 }

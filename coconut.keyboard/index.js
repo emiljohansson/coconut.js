@@ -7,14 +7,24 @@
 var pressedKeyCodes;
 
 /**
+ * Reference to the document object.
+ * @type {object}
+ */
+var doc;
+
+/**
  * Appends the keydown and keyup event to the document.
  */
-exports.init = function() {
+exports.init = function(documentRef) {
+    if (typeof documentRef !== 'object') {
+        throw 'Must pass in the document object.';
+    }
     if (Array.isArray(pressedKeyCodes)) {
         return;
     }
-    document.addEventListener('keydown', onKeyDown);
-    document.addEventListener('keyup', onKeyUp);
+    doc = documentRef;
+    doc.addEventListener('keydown', onKeyDown);
+    doc.addEventListener('keyup', onKeyUp);
     pressedKeyCodes = [];
 };
 
@@ -23,8 +33,9 @@ exports.init = function() {
  * clears the list of pressed keys.
  */
 exports.dispose = function() {
-    document.removeEventListener('keydown', onKeyDown);
-    document.removeEventListener('keyup', onKeyUp);
+    doc.removeEventListener('keydown', onKeyDown);
+    doc.removeEventListener('keyup', onKeyUp);
+    doc = undefined;
     pressedKeyCodes = undefined;
 };
 

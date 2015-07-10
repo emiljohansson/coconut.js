@@ -4,7 +4,7 @@ var fs = require('fs');
 var cp = require('child_process');
 
 function runTests(event, filename) {
-    if (filename && filename.indexOf('test/') > -1) {
+    if (filename && (filename.indexOf('test/') > -1 || filename.indexOf('npm-debug') > -1)) {
         return;
     }
     cp.spawn('npm', ['run', 'test'], {
