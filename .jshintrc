@@ -1,4 +1,12 @@
 {
     "browser": true,
-    "node": true
+    "node": true,
+    "bitwise": true,
+	"curly": true,
+	"immed": true,
+	"newcap": true,
+	"noarg": true,
+	"undef": true,
+	"unused": "vars",
+	"strict": true
 }
