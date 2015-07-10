@@ -12,7 +12,7 @@ $ npm install --save keyboard-handler
 
 ```js
 var keyboard = require('keyboard-handler');
-keyboard.init();
+keyboard.init(document);
 keyboard.charIsDown('e');
 keyboard.keyIsDown();
 keyboard.dispose();
@@ -20,9 +20,15 @@ keyboard.dispose();
 
 ## API
 
-### init()
+### init(documentRef)
 
 Appends the keydown and keyup event to the document.
+
+#### documentRef
+
+Type: `object`
+
+Reference to the document object.
 
 ### dispose()
 

@@ -14,6 +14,8 @@ var doc;
 
 /**
  * Appends the keydown and keyup event to the document.
+ * 
+ * @param  {object} documentRef Reference to the document object.
  */
 exports.init = function(documentRef) {
     if (typeof documentRef !== 'object') {
