@@ -1,6 +1,6 @@
 {
-  "name": "coconut2.js",
-  "version": "0.0.0",
+  "name": "coconut.js",
+  "version": "0.0.1",
   "description": "npm based html5 game engine.",
   "main": "index.js",
   "scripts": {
